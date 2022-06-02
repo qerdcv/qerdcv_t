@@ -1,0 +1,15 @@
+username() {
+  echo "%{$FG[034]%}%n%{$reset_color%}"
+}
+
+directory() {
+  echo "%{$fg[cyan]%}%2~%{$reset_color%}"
+}
+
+current_time() {
+   echo "%{$fg[green]%}%T%{$reset_color%}"
+}
+
+sh_arrow() {
+  echo "%(?.%{$fg[green]%}.%{$fg[red]%}%? )➤%f"
+}
