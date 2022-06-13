@@ -19,8 +19,8 @@ sh_arrow() {
 ######################## git ########################
 ZSH_THEME_GIT_PROMPT_PREFIX="(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}*%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}✔%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%} *%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%} ✔%{$reset_color%}"
 
 ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[cyan]%} ✈"
 ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%} ✭"
@@ -30,5 +30,5 @@ ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[magenta]%} ✂"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[grey]%} ✱"
 ###################### end git ######################
 
-PROMPT='$(directory) $(git_prompt_info) $(sh_arrow) '
+PROMPT='🦭  $(directory) $(git_prompt_info) $(sh_arrow) '
 RPROMPT='$(current_time)'
